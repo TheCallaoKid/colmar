@@ -1,0 +1,65 @@
+/* Universal Styles */
+
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 4rem; /* To offset for fixed header. */
+}
+
+
+
+
+
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+}
+
+
+/* Intro section */
+.intro {
+  background-color: LightGray;
+}
+
+
+
+
+/* Info section */
+.info {
+  background-color: WhiteSmoke;
+}
+
+
+
+
+/* Courses */
+.courses {
+  background-color: LightGray;
+}
+
+
+
+
+
+/* Thesis */
+.thesis {
+  background-color: WhiteSmoke;
+}
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: WhiteSmoke;
+}
