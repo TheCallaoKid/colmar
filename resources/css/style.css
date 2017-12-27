@@ -10,7 +10,10 @@ html {
   top: 4rem; /* To offset for fixed header. */
 }
 
-
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+}
 
 
 
@@ -79,27 +82,26 @@ header span {
 
 .large-image img {
   height: auto;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 /* Intro section */
 .intro {
   background-color: LightGray;
   display: flex;
-  height: 28rem;
-  width: 100%
+  height: auto;
+  width: 100%;
   position: relative;
   align-items: center;
+  overflow: hidden;
+  padding: 2rem 1.5rem;
 }
 
 .start {
   display: flex;
   flex-direction: column;
   width: 25%;
-}
-
-.start h2 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 2rem;
 }
 
 .start-button {
@@ -118,12 +120,70 @@ header span {
 /* Info section */
 .info {
   background-color: WhiteSmoke;
-  height: 28rem;
+  height: auto;
   width: 100%;
+  position: relative;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
 }
 
+.info-left {
 
+}
 
+.practice {
+  width: 60%;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.practice h2 {
+  padding-bottom: 1.5rem;
+}
+
+.practice p {
+  padding-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.practice span {
+  font-style: bold;
+}
+
+.info-right {
+  width: 40%;
+  overflow: hidden;
+}
+
+.orientation .campus .guest-lecture {
+  display: flex;
+  align-items: center;
+}
+
+.info-right-image {
+
+}
+
+.info-right img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.info-right-text {
+  width: 65%;
+}
+
+.info-right h3 {
+  padding-bottom: 0.5rem
+}
+
+.info-right p {
+  padding-bottom: 0.5rem;
+}
 
 /* Courses */
 .courses {
