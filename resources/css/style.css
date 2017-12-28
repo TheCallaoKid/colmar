@@ -122,6 +122,7 @@ header span {
   background-color: WhiteSmoke;
   height: auto;
   width: 100%;
+  display: flex;
   position: relative;
   align-items: center;
   padding-top: 2rem;
@@ -130,59 +131,68 @@ header span {
 }
 
 .info-left {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
 
+.info-left img {
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
 .practice {
-  width: 60%;
   padding-bottom: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.practice h2 {
+.info-left h2 {
   padding-bottom: 1.5rem;
 }
 
-.practice p {
+.info-left p {
   padding-bottom: 1.5rem;
   font-style: italic;
 }
 
-.practice span {
+.info-left span {
   font-style: bold;
 }
 
 .info-right {
   width: 40%;
   overflow: hidden;
+  flex-direction: column;
 }
 
-.orientation .campus .guest-lecture {
+.orientation, .campus, .guest-lecture {
   display: flex;
   align-items: center;
 }
 
 .info-right-image {
-
+  width: 35%;
+  overflow: hidden;
+  padding: 1rem;
 }
 
 .info-right img {
-  width: 35%;
+  max-width: 100%;
   height: auto;
-  padding: 1rem;
 }
 
 .info-right-text {
   width: 65%;
+  line-height: 2;
 }
 
-.info-right h3 {
-  padding-bottom: 0.5rem
+.info-right-text h3 {
+
+  font-size: 1.5rem;
 }
 
-.info-right p {
-  padding-bottom: 0.5rem;
+.info-right-text p {
+
 }
 
 /* Courses */
