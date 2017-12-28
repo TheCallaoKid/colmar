@@ -104,6 +104,14 @@ header span {
   width: 25%;
 }
 
+.start-text {
+  line-height: 1.5;
+}
+
+.start-text h2 {
+  font-weight: bold;
+}
+
 .start-button {
   background-color: black;
 }
@@ -125,9 +133,7 @@ header span {
   display: flex;
   position: relative;
   align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-left: 1.5rem;
+  padding: 2rem 1.5rem;
 }
 
 .info-left {
@@ -148,6 +154,7 @@ header span {
 
 .info-left h2 {
   padding-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .info-left p {
@@ -168,6 +175,7 @@ header span {
 .orientation, .campus, .guest-lecture {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .info-right-image {
@@ -187,7 +195,7 @@ header span {
 }
 
 .info-right-text h3 {
-
+  font-weight: bold;
   font-size: 1.5rem;
 }
 
@@ -198,12 +206,71 @@ header span {
 /* Courses */
 .courses {
   background-color: LightGray;
-  height: 40rem;
+  height: auto;
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.courses-banner {
   width: 100%;
 }
 
+.courses-banner h2 {
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
 
+.course-descriptions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
 
+.software-engineering-course, .computer-art-course, .design-course, .data-course, .business-course, .marketing-course {
+  width: 25%;
+  height: 20rem;
+  overflow: hidden;
+  background-color: white;
+  align-items: center;
+  text-align: left;
+  margin: 1rem;
+}
+
+.medium-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.course-text {
+  padding: 1rem;
+}
+
+.course-text h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.course-text p {
+  padding-top: 0.5rem;
+}
+
+/*
+.software-engineering-course, .computer-art-course, .data-course, .business-course {
+  padding-right: 2rem;
+}
+
+.software-engineering-course, .computer-art-course, .design-course {
+  padding-bottom: 2rem;
+}
+*/
 
 
 /* Thesis */
@@ -211,6 +278,7 @@ header span {
   background-color: WhiteSmoke;
   height: 28rem;
   width: 100%;
+  padding: 2rem 1.5rem;
 }
 
 
@@ -225,6 +293,8 @@ footer {
   height: 3rem;
   padding-top: 1rem;
   padding-left: 1.5rem;
+  padding-right: 1.5rem;
   position: relative;
   z-index: 50;
+  border-top: 2px solid LightGray;
 }
