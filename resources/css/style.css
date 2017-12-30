@@ -385,8 +385,28 @@ footer {
   position: relative;
   z-index: 50;
   border-top: 2px solid LightGray;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.rights {
+  display: flex;
 }
 
 .terms {
-  
+  display: flex;
+  align-items: center;
 }
+
+.terms p {
+  padding: 0 1rem;
+}
+
+/*
+@media only screen and (max-width: 480px) {
+  footer {
+    display: none;
+  }
+}
+*/
