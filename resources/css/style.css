@@ -155,6 +155,32 @@ header span {
   padding-bottom: 0.5rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .intro {
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .large-image {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .start {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .start-text h2 {
+    padding-bottom: 2rem;
+  }
+
+  .start-text p {
+    padding-bottom: 1.5rem;
+  }
+}
 
 
 /* Info section */
@@ -231,9 +257,57 @@ header span {
   font-size: 1.5rem;
 }
 
-.info-right-text p {
-
+.mobile-img {
+  display: none;
 }
+
+/*.info-right-text p {
+
+}*/
+
+@media only screen and (max-width: 480px) {
+  .info-left {
+    display: none;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    width: 100%;
+    display: block;
+  }
+
+  .info-right {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .info-right-image {
+    width: 100%;
+    display: block;
+  }
+
+  .orientation {
+    flex-direction: column;
+  }
+
+  .campus {
+    flex-direction: column;
+  }
+
+  .guest-lecture {
+    flex-direction: column;
+  }
+
+  /*.info {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }*/
+}
+
 
 /* Courses */
 .courses {
@@ -263,6 +337,7 @@ header span {
   padding-right: 4.5rem;
   padding-bottom: 2rem;
   margin: 0 auto;
+  flex-direction: row;
 }
 
 .software-engineering-course, .computer-art-course, .design-course, .data-course, .business-course, .marketing-course {
@@ -303,6 +378,37 @@ header span {
   padding-bottom: 2rem;
 }
 */
+
+.mobile-courses {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .course-descriptions {
+    display: none;
+  }
+
+  .mobile-courses {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-courses p {
+    font-size: 1.5rem;
+  }
+
+  .software-engineering-mobile, .computer-art-mobile, .design-mobile, .data-mobile, .business-mobile, .marketing-mobile {
+    background-color: WhiteSmoke;
+    width: 75%
+    align-items: center;
+    border: 2px solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
 
 
 /* Thesis */
@@ -403,6 +509,21 @@ header span {
    padding-bottom: 0.5rem;
  }
 
+@media only screen and (max-width: 480px) {
+  .thesis-left-text {
+    display: none;
+  }
+
+  .thesis-right {
+    display: none;
+  }
+
+  .thesis-container, .thesis-left, .thesis-video {
+    width: 100%;
+
+  }
+}
+
 
 
 /* Footer */
@@ -433,6 +554,18 @@ footer {
 
 .terms p {
   padding: 0 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .terms {
+    display: none;
+  }
+
+  .rights {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
 }
 
 /*
